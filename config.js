@@ -21,5 +21,4 @@ con.connect((err, res) => {
 
 
 
-
 module.exports = con;

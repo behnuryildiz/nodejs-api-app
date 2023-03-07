@@ -15,9 +15,6 @@ var url = require ('url')
 app.use(express.urlencoded({ extended: true }));
 
 
-
-
-
 // GET ROUTES
 
 app.get('/all', (req, res) => {
@@ -27,9 +24,7 @@ app.get('/all', (req, res) => {
       }
       else { res.send(result); }
    });
-
 });
-
 
 
 app.get('/owners', (req, res) => {
@@ -39,10 +34,7 @@ app.get('/owners', (req, res) => {
       }
       else { res.send(result); }
    });
-
 });
-
-
 
 
 app.get('/pets', (req, res) => {
@@ -52,8 +44,8 @@ app.get('/pets', (req, res) => {
       }
       else { res.send(result); }
    });
-
 });
+
 
 app.get('/pets/species', (req, res) => {
    con.query("select species from Pets", (err, result) => {
@@ -62,13 +54,12 @@ app.get('/pets/species', (req, res) => {
       }
       else { res.send(result); }
    });
-
 });
 
 
 
-// POST ROUTES
 
+// POST ROUTES
 
 
 app.post('/owners/add', (req, res) => {
@@ -77,7 +68,6 @@ app.post('/owners/add', (req, res) => {
       res.send(results);
 
    })
-
 }) 
 
 
@@ -87,11 +77,7 @@ app.post('/pets/add', (req, res) => {
       res.send(results);
 
    })
-
 }) 
-
-
-
 
 
 

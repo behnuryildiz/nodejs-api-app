@@ -1,7 +1,11 @@
 # This API-Webserver app is created to be able to connect any RDMS database for example MySQL or MariaDB with simply and main endpoints like GET, POST and to be able to see this connection through this API application.
  * PS: this endpoints number can be increased when needed and -related to this- for a web server with better functionality. (e.g PUT, DELETE ...)
 
-[] As basic prog. Language was chosen Node.js which is based on JavaScript progr. language and as Framework, the Express.
+[] As basic prog. Language was chosen Node.js which is based on JavaScript progr. language and as Framework, the Express. 
+
+--> apt-get update && apt-get install npm
+--> npm i express
+--> npm start
 
 [] The web server has to be able keeping the credential data for a successful connection with the database container. 
  * Therefore, we'll be seeing in that app that the all log-in data are in the server.json file.
